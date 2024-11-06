@@ -2,10 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-venv/
-env/
-*.pyc
+*.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -17,37 +16,23 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 
-# Project specific
-downloads/
-.env
-*.mp4
-*.mp3
-*.webm
-*.m4a
-*.part
+# Virtual Environment
+venv/
+ENV/
 
-# Flask
-instance/
-.webassets-cache
-flask_session/
-
-# VS Code
-.vscode/
-*.code-workspace
-
-# PyCharm
+# IDE
 .idea/
-
-# System
-.DS_Store
-Thumbs.db
+.vscode/
 *.swp
 *.swo
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
@@ -65,3 +50,17 @@ docker-compose.override.yml
 # Database
 *.db
 *.sqlite3
+
+# Project specific
+downloads/
+.env
+*.mp4
+*.mp3
+*.webm
+*.m4a
+*.part
+
+# Flask
+instance/
+.webassets-cache
+flask_session/
