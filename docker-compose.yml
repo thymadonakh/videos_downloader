@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:5000"
+    volumes:
+      - ./downloads:/app/downloads
+    environment:
+      - FLASK_ENV=production
+      - SECRET_KEY=${SECRET_KEY}
+    restart: always
+
+volumes:
+  tmp_downloads:
+    driver: local 
