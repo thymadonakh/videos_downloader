@@ -64,3 +64,4 @@ downloads/
 instance/
 .webassets-cache
 flask_session/
+.vercel
